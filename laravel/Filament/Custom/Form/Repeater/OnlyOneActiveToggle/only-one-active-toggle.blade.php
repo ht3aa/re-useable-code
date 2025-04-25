@@ -25,7 +25,9 @@
         
         }" x-bind:aria-checked="state?.toString()"
             x-on:click="function() {
-                this.resetAll();
+                if(! this.state) {
+                    this.resetAll();
+                }
                 this.state = !this.state;
             }"
             x-bind:class="state
