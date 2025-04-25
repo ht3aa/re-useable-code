@@ -30,5 +30,6 @@ class Test extends Model
 		];
 	}
 
+	// this method determaine if the model has children or not
 	public function hasChildren(): bool {}
 }
